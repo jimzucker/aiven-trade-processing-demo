@@ -83,13 +83,11 @@ CREATE TABLE structured_orders (
 EXECUTE STATEMENT SET
 BEGIN
 INSERT INTO flow_orders 
-SELECT trade_id, quantity, account, symbol, uuid, TO_TIMESTAMP (
-    SUBSTRING(execution_time, 1, 23), 'yyyy-MM-dd''T''HH:mm:ss.SSS') AS execution_ts 
+SELECT trade_id, quantity, account, symbol, uuid, execution_ts 
     FROM orders
     WHERE account like 'flow%';
 INSERT INTO structured_orders
-SELECT trade_id, quantity, account, symbol, uuid, TO_TIMESTAMP (
-    SUBSTRING(execution_time, 1, 23), 'yyyy-MM-dd''T''HH:mm:ss.SSS') AS execution_ts 
+SELECT trade_id, quantity, account, symbol, uuid, execution_ts 
     FROM orders
     WHERE account like 'struct%';
 END
