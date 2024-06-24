@@ -1,3 +1,5 @@
+# Trade Processing Demo
+
 # 1. Create the infrastructure
 ## Services
 	kafka
@@ -9,7 +11,7 @@
 	kafka -> m3db
 	grafana -> m3db
 
-# 2. Setup Pre-requisites install python and kafka-python to run the 'mock order producer'
+# 2. Setup Pre-requisites install python and kafka-python to run the 'order generator'
 
 - Install Python client
 ``` python3 -m pip install kafka-python ```
@@ -103,8 +105,8 @@ rate(kafka_server:BrokerTopicMetrics_MessagesInPerSec_Count{topic=\"structured_o
 
 # 7. Deploy the flink application with parallism '3'
 
-# 8. Run the 'mock order producer'
-python producer.py
+# 8. Run the 'order generator'
+python order_generator.py
 
 You will see output like this:
 ```
