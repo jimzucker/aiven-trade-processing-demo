@@ -25,7 +25,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "f8764b6e-5872-4e5a-8bb5-37064babfc8f"
+        "uid": "df93538c-d029-4d1e-a11b-41b83fbb131e"
       },
       "fieldConfig": {
         "defaults": {
@@ -102,7 +102,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "f8764b6e-5872-4e5a-8bb5-37064babfc8f"
+            "uid": "df93538c-d029-4d1e-a11b-41b83fbb131e"
           },
           "editorMode": "builder",
           "expr": "rate(kafka_server:BrokerTopicMetrics_MessagesInPerSec_Count{topic=\"orders\"}[$__rate_interval])",
@@ -117,7 +117,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "f8764b6e-5872-4e5a-8bb5-37064babfc8f"
+        "uid": "df93538c-d029-4d1e-a11b-41b83fbb131e"
       },
       "description": "",
       "fieldConfig": {
@@ -197,7 +197,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "f8764b6e-5872-4e5a-8bb5-37064babfc8f"
+            "uid": "df93538c-d029-4d1e-a11b-41b83fbb131e"
           },
           "editorMode": "builder",
           "expr": "rate(kafka_server:BrokerTopicMetrics_MessagesInPerSec_Count{topic=\"flow_orders\"}[$__rate_interval])",
@@ -225,7 +225,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "f8764b6e-5872-4e5a-8bb5-37064babfc8f"
+        "uid": "df93538c-d029-4d1e-a11b-41b83fbb131e"
       },
       "description": "",
       "fieldConfig": {
@@ -305,7 +305,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "f8764b6e-5872-4e5a-8bb5-37064babfc8f"
+            "uid": "df93538c-d029-4d1e-a11b-41b83fbb131e"
           },
           "editorMode": "builder",
           "expr": "rate(kafka_server:BrokerTopicMetrics_MessagesInPerSec_Count{topic=\"structured_orders\"}[$__rate_interval])",
@@ -326,13 +326,13 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "flink-sql-demo",
   "uid": "a6b58a3a-5597-4dc4-b2d6-e75b8feb4a03",
-  "version": 11,
+  "version": 14,
   "weekStart": ""
 }
